@@ -138,7 +138,7 @@ footer {
   }
 
   /*Para cels peque*/
-@media (max-width: 334px) {
+@media (max-width: 364px) {
   .descripcion-servicio h2 {
     font-size: 0.7rem;
   }

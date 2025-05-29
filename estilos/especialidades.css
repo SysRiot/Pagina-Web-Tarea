@@ -179,9 +179,9 @@ nav a:hover {
   }
 }
   /*Para cels peque*/
-@media (max-width: 334px) {
-  .descripcion-servicio h2 {
-    font-size: 0.7rem;
+@media (max-width: 364px) {
+  .descripcion-servicio {
+    font-size: 1.1rem;
   }
 
   nav {
@@ -198,7 +198,5 @@ nav a:hover {
     height: auto; /* Mantiene la proporción */
     margin: 0 auto; /* Centra la imagen */
   }
-  .descripcion-servicio h2 {
-    font-size: 0.8rem;
-  }
+
 }

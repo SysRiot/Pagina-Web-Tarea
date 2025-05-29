@@ -136,4 +136,20 @@ footer {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+
+  /*Para cels peque*/
+@media (max-width: 334px) {
+  .descripcion-servicio h2 {
+    font-size: 0.7rem;
+  }
+
+  nav {
+    gap: 5px;
+  }
+
+  nav a {
+    padding: 4px 6px;
+    font-size: 0.8rem;
+  }  
+}
 }

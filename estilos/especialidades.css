@@ -38,6 +38,7 @@ nav {
   justify-content: center;
   gap: 40px;
   box-shadow: 0 8px 32px rgba(0, 122, 204, 0.3); /*añade sombra etc.*/
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav a {
@@ -168,4 +169,27 @@ nav a:hover {
     padding: 8px 12px;
     font-size: 0.8rem;
   }
+
+  .descripcion-servicio h2 {
+    font-size: 1rem;
+  }
+
+  .servicio-fila {
+    height: 60px;
+  }
+}
+  /*Para cels peque*/
+@media (max-width: 334px) {
+  .descripcion-servicio h2 {
+    font-size: 0.7rem;
+  }
+
+  nav {
+    gap: 5px;
+  }
+
+  nav a {
+    padding: 4px 6px;
+    font-size: 0.8rem;
+  }  
 }

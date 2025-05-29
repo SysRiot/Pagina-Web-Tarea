@@ -76,3 +76,83 @@ footer {
   line-height: 1;
   font-weight: bold;
 }
+
+/*==============PARTE DE REPONSIV============*/
+
+/* Tablets y pantallas medianas */
+@media (min-width: 768px) {
+  header img {
+    max-width: 220px;
+  }
+  
+  nav {
+    gap: 20px;
+    padding: 15px;
+  }
+  
+  nav a {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+  
+  .contenido-psicologia {
+    padding: 0 30px;
+  }
+  
+  .informacion-psicologia {
+    padding: 30px;
+  }
+  
+  .informacion-psicologia h1 {
+    font-size: 1.8rem;
+  }
+  
+  .informacion-psicologia h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+  header {
+    padding: 20px;
+  }
+  
+  header img {
+    max-width: 250px;
+  }
+  
+  .informacion-psicologia {
+    padding: 40px;
+  }
+  
+  .informacion-psicologia h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Pantallas muy pequeñas (móviles pequeños) */
+@media (max-width: 480px) {
+  nav a {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .informacion-psicologia {
+    padding: 15px;
+  }
+  
+  .informacion-psicologia h1 {
+    font-size: 1.3rem;
+  }
+  
+  .informacion-psicologia h2 {
+    font-size: 1.1rem;
+  }
+  
+  footer p {
+    font-size: 0.8rem;
+  }
+}

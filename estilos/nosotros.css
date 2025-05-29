@@ -6,25 +6,37 @@ body {
 }
 
 header {
-  background-color: #d0eaff;
+  background: rgba(208, 234, 255, 0.95);
   padding: 15px 40px;
   display: flex;
   align-items: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 32px rgba(0, 122, 204, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header img {
-  height: 100px;
+  height: 80px;
+  width: auto;
   object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.05);
 }
 
 /* NAVEGACION*/
 nav {
-  background-color: #007acc;
-  padding: 12px 40px;
-  display: flex;
+  background: #007acc;
+  background: linear-gradient(135deg, #007acc 0%, #005f99 100%);
+  padding: 15px 40px;
+  display: flex; /*lo convierte en un contenedor flexbox, flexible de sus elementos hijos*/
   justify-content: center;
   gap: 40px;
+  box-shadow: 0 8px 32px rgba(0, 122, 204, 0.3); /*añade sombra etc.*/
 }
 
 nav a {
@@ -32,14 +44,14 @@ nav a {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
+  padding: 12px 24px;
+  border-radius: 30px;
+  transition: all 0.3s ease; /*Transicion suave de 0.3s y ease lo hace mas natural, inicia rapido y frena al final*/
 }
 
 nav a:hover {
-  background-color: #005f99;
-  color: #d0eaff;
+  background: rgba(255, 255, 255, 0.2); /*cambia el color al pasar el cursor*/
+  transform: translateY(-2px); /*se levanta ligeramente*/
 }
 
 /* CONTENIDO */
@@ -55,6 +67,7 @@ nav a:hover {
   margin-bottom: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 122, 204, 0.15);
+  text-align: justify;
 }
 
 .seccion h1,
@@ -77,4 +90,38 @@ footer {
   padding: 20px;
   font-size: 14px;
   font-weight: bold;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+  }
+  
+  header img {
+    height: 60px;
+  }
+  
+  nav {
+    padding: 15px 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    gap: 15px;
+  }
+  
+  nav a {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
 }

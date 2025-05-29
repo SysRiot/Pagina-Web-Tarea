@@ -191,5 +191,14 @@ nav a:hover {
   nav a {
     padding: 4px 6px;
     font-size: 0.8rem;
-  }  
+  }
+
+  .img-especialidades {
+    max-width: 40%; /* Reduce el ancho máximo */
+    height: auto; /* Mantiene la proporción */
+    margin: 0 auto; /* Centra la imagen */
+  }
+  .descripcion-servicio h2 {
+    font-size: 0.8rem;
+  }
 }
